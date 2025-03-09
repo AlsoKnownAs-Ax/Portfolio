@@ -4,4 +4,6 @@ export type Testimonial = {
 	name: string;
 	company: string;
 	position: string;
+	linkedin?: string;
+	website?: string;
 };

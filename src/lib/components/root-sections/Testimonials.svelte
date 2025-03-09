@@ -20,30 +20,43 @@
 	});
 </script>
 
-<div class="relative mx-auto w-full max-w-2xl cursor-grab overflow-hidden py-12">
-	<Carousel.Root
-		plugins={[plugin]}
-		setApi={(emblaApi) => (api = emblaApi)}
-		opts={{
-			align: 'center',
-			loop: true
-		}}
-		onmouseenter={plugin.stop}
-		onmouseleave={plugin.reset}
-	>
-		<Carousel.Content>
-			{#each testimonials as testimonial, i (i)}
-				<Carousel.Item>
-					<div class="p-1">
-						<TestimonialCard {testimonial} />
-					</div>
-				</Carousel.Item>
+<section id="testimonials">
+	<div class="relative mx-auto w-full max-w-2xl cursor-grab py-12">
+		<div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Testimonials</h2>
+			<p class="max-w-[85%] text-muted-foreground md:text-xl">
+				What people say about working with me.
+			</p>
+		</div>
+		<Carousel.Root
+			class="mt-10"
+			plugins={[plugin]}
+			setApi={(emblaApi) => (api = emblaApi)}
+			opts={{
+				align: 'center',
+				loop: true
+			}}
+			onmouseenter={plugin.stop}
+			onmouseleave={plugin.reset}
+		>
+			<Carousel.Content>
+				{#each testimonials as testimonial, i (i)}
+					<Carousel.Item>
+						<div class="p-1">
+							<TestimonialCard {testimonial} />
+						</div>
+					</Carousel.Item>
+				{/each}
+			</Carousel.Content>
+			<Carousel.Previous />
+			<Carousel.Next />
+		</Carousel.Root>
+		<div class="flex items-center justify-center gap-2 py-2 text-sm text-muted-foreground">
+			{#each Array(count) as _, i (i)}
+				<div
+					class={`size-2 rounded-full bg-muted/50 transition-all duration-300 ease-in-out ${current === i + 1 ? 'bg-primary/50' : 'bg-muted/50'}`}
+				></div>
 			{/each}
-		</Carousel.Content>
-		<Carousel.Previous />
-		<Carousel.Next />
-	</Carousel.Root>
-	<div class="py-2 text-center text-sm text-muted-foreground">
-		Testimonial {current} of {count}
+		</div>
 	</div>
-</div>
+</section>

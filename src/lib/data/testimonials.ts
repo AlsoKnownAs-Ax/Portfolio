@@ -6,6 +6,8 @@ export const testimonials: Testimonial[] = [
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		name: 'John Doe',
 		company: 'Company A',
+		linkedin: 'https://www.linkedin.com/in/andrei-alexandru-amzu-5123132a0/',
+		website: 'https://www.linkedin.com/in/andrei-alexandru-amzu-5123132a0/',
 		position: 'CEO'
 	},
 	{

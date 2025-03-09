@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Testimonial } from '$lib/types/testimonials';
+	import { Globe, Linkedin } from 'lucide-svelte';
 
 	interface Props {
 		testimonial: Testimonial;
@@ -37,5 +38,22 @@
 
 		<h3 class="mt-4 text-xl font-bold">{testimonial.company}</h3>
 		<p class="text-sm text-muted-foreground">{testimonial.position}</p>
+	</div>
+	<!-- Socials section -->
+	<div class="absolute bottom-5 flex gap-2">
+		{#if testimonial.linkedin}
+			<a href={testimonial.linkedin} target="_blank" rel="noopener noreferrer">
+				<Linkedin
+					class="size-6 cursor-pointer text-muted-foreground transition-colors duration-200 hover:text-primary"
+				/>
+			</a>
+		{/if}
+		{#if testimonial.website}
+			<a href={testimonial.website} target="_blank" rel="noopener noreferrer">
+				<Globe
+					class="size-6 cursor-pointer text-muted-foreground transition-colors duration-200 hover:text-primary"
+				/>
+			</a>
+		{/if}
 	</div>
 </div>

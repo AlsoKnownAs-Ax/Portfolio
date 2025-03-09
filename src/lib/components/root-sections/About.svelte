@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Code, Gauge, Globe, Lightbulb, PenTool, RefreshCcw, Shield, Users } from 'lucide-svelte';
+	import { Lightbulb, Shield, Users } from 'lucide-svelte';
 </script>
 
 <section class="bg-muted/40 py-24" id="about">

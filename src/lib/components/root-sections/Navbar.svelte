@@ -28,6 +28,9 @@
 		</a>
 		<nav class="hidden gap-6 md:flex">
 			<a href="#about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+			<a href="#testimonials" class="text-sm font-medium transition-colors hover:text-primary">
+				Testimonials
+			</a>
 			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">
 				Projects
 			</a>
