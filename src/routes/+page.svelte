@@ -1,9 +1,9 @@
 <script lang="ts">
-	import About from '$lib/components/About.svelte';
-	import Hero from '$lib/components/Hero.svelte';
+	import { About, Hero, Testimonials } from '$lib/components/root-sections';
 </script>
 
 <main class="flex-1">
 	<Hero />
 	<About />
+	<Testimonials />
 </main>

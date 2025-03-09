@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { ArrowRight, Linkedin, Github } from 'lucide-svelte';
-	import { Button } from './ui/button';
+	import { Button } from '../ui/button';
 </script>
 
-<section class="bg-background relative overflow-hidden py-20 md:py-32" id="hero">
+<section class="relative overflow-hidden bg-background py-20 md:py-32" id="hero">
 	<div class="container px-4 md:px-6">
 		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
 			<div class="flex flex-col justify-center space-y-6">
@@ -13,9 +13,10 @@
 						<br />
 						<span class="text-foreground">Software Developer</span>
 					</h1>
-					<p class="text-muted-foreground max-w-[600px] text-lg leading-relaxed md:text-xl">
-						Building robust, scalable applications with modern technologies. Passionate about clean
-						code and user-centered design.
+					<p class="max-w-[600px] text-lg leading-relaxed text-muted-foreground md:text-xl">
+						Computer Science Student crafting full-stack applications with clean architecture and
+						intuitive interfaces. Passionate about solving complex problems through elegant,
+						high-performance code.
 					</p>
 				</div>
 				<div class="flex flex-col gap-3 min-[400px]:flex-row">
@@ -41,7 +42,7 @@
 						aria-label="Visit my GitHub profile"
 					>
 						<Github
-							class="text-muted-foreground hover:text-primary size-6 cursor-pointer transition-colors duration-200"
+							class="size-6 cursor-pointer text-muted-foreground transition-colors duration-200 hover:text-primary"
 						/>
 					</a>
 					<a
@@ -51,14 +52,14 @@
 						aria-label="Visit my LinkedIn profile"
 					>
 						<Linkedin
-							class="text-muted-foreground hover:text-primary size-6 cursor-pointer transition-colors duration-200"
+							class="size-6 cursor-pointer text-muted-foreground transition-colors duration-200 hover:text-primary"
 						/>
 					</a>
 				</div>
 			</div>
 			<div class="flex items-center justify-center">
 				<div
-					class="from-primary/20 to-primary/5 relative h-[350px] w-full max-w-[350px] overflow-hidden rounded-full bg-gradient-to-br p-1 shadow-xl transition-all hover:shadow-2xl"
+					class="relative h-[350px] w-full max-w-[350px] overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-1 shadow-xl transition-all hover:shadow-2xl"
 				>
 					<img
 						src="/main-photo.jpg"

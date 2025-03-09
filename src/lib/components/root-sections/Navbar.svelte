@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { X, Menu } from 'lucide-svelte';
-	import { Button } from './ui/button';
+	import { Button } from '../ui/button';
 
 	let isScrolled = $state(false);
 	let isOpen = $state(false);
@@ -27,15 +27,15 @@
 			<span class="text-xl font-bold">Amzu Alex</span>
 		</a>
 		<nav class="hidden gap-6 md:flex">
-			<a href="#test" class="hover:text-primary text-sm font-medium transition-colors">About</a>
-			<a href="#test" class="hover:text-primary text-sm font-medium transition-colors">
+			<a href="#about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">
 				Projects
 			</a>
-			<a href="#test" class="hover:text-primary text-sm font-medium transition-colors">Skills</a>
-			<a href="#test" class="hover:text-primary text-sm font-medium transition-colors">
+			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">Skills</a>
+			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">
 				Experience
 			</a>
-			<a href="#test" class="hover:text-primary text-sm font-medium transition-colors">Contact</a>
+			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">Contact</a>
 		</nav>
 		<div class="hidden items-center gap-4 md:flex">
 			<Button
@@ -66,35 +66,35 @@
 			<div class="flex flex-col space-y-4 pb-6 pt-2">
 				<a
 					href="#test"
-					class="hover:text-primary text-sm font-medium transition-colors"
+					class="text-sm font-medium transition-colors hover:text-primary"
 					onclick={() => setIsOpen(false)}
 				>
 					About
 				</a>
 				<a
 					href="#test"
-					class="hover:text-primary text-sm font-medium transition-colors"
+					class="text-sm font-medium transition-colors hover:text-primary"
 					onclick={() => setIsOpen(false)}
 				>
 					Projects
 				</a>
 				<a
 					href="#test"
-					class="hover:text-primary text-sm font-medium transition-colors"
+					class="text-sm font-medium transition-colors hover:text-primary"
 					onclick={() => setIsOpen(false)}
 				>
 					Skills
 				</a>
 				<a
 					href="#test"
-					class="hover:text-primary text-sm font-medium transition-colors"
+					class="text-sm font-medium transition-colors hover:text-primary"
 					onclick={() => setIsOpen(false)}
 				>
 					Experience
 				</a>
 				<a
 					href="#test"
-					class="hover:text-primary text-sm font-medium transition-colors"
+					class="text-sm font-medium transition-colors hover:text-primary"
 					onclick={() => setIsOpen(false)}
 				>
 					Contact
