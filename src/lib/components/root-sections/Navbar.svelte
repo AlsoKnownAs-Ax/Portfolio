@@ -31,7 +31,7 @@
 			<a href="#testimonials" class="text-sm font-medium transition-colors hover:text-primary">
 				Testimonials
 			</a>
-			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">
+			<a href="#projects" class="text-sm font-medium transition-colors hover:text-primary">
 				Projects
 			</a>
 			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">Skills</a>

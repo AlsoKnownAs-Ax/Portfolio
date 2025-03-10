@@ -4,6 +4,7 @@
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import { type CarouselAPI } from '$lib/components/ui/carousel/context.js';
 	import Autoplay from 'embla-carousel-autoplay';
+	import { isMobile } from '$lib/hooks/isMobile';
 
 	const plugin = Autoplay({ delay: 4000, stopOnInteraction: true });
 	let api = $state<CarouselAPI>();
@@ -48,8 +49,10 @@
 					</Carousel.Item>
 				{/each}
 			</Carousel.Content>
-			<Carousel.Previous />
-			<Carousel.Next />
+			{#if !$isMobile}
+				<Carousel.Previous />
+				<Carousel.Next />
+			{/if}
 		</Carousel.Root>
 		<div class="flex items-center justify-center gap-2 py-2 text-sm text-muted-foreground">
 			{#each Array(count) as _, i (i)}
