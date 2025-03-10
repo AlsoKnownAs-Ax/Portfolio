@@ -21,8 +21,8 @@
 	});
 </script>
 
-<section id="testimonials">
-	<div class="relative mx-auto w-full max-w-2xl cursor-grab py-12">
+<section id="testimonials" class="py-24">
+	<div class="relative mx-auto w-full max-w-2xl cursor-grab">
 		<div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
 			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Testimonials</h2>
 			<p class="max-w-[85%] text-muted-foreground md:text-xl">
@@ -54,7 +54,7 @@
 				<Carousel.Next />
 			{/if}
 		</Carousel.Root>
-		<div class="flex items-center justify-center gap-2 py-2 text-sm text-muted-foreground">
+		<div class="flex items-center justify-center gap-2 pt-4 text-sm text-muted-foreground">
 			{#each Array(count) as _, i (i)}
 				<div
 					class={`size-2 rounded-full bg-muted/50 transition-all duration-300 ease-in-out ${current === i + 1 ? 'bg-primary/50' : 'bg-muted/50'}`}
