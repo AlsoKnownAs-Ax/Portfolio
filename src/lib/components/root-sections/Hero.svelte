@@ -7,7 +7,23 @@
 <section class="relative overflow-hidden bg-background py-20 md:py-32" id="hero">
 	<div class="container px-4 md:px-6">
 		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-			<div class="flex flex-col justify-center space-y-6">
+			<div class="order-first mb-6 flex items-center justify-center lg:order-last lg:mb-0">
+				<div
+					class="relative h-[300px] w-full max-w-[300px] overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-1 shadow-xl transition-all hover:shadow-2xl lg:h-[350px] lg:max-w-[350px]"
+				>
+					<img
+						src="/main-photo.jpg"
+						alt="Amzu Alex - Software Engineer"
+						width={350}
+						height={350}
+						loading="lazy"
+						class="-translate-y-10 scale-105 rounded-full object-cover transition-transform duration-300 hover:scale-110"
+					/>
+				</div>
+			</div>
+
+			<!-- Text Content - Order second on mobile, first on desktop -->
+			<div class="order-last flex flex-col justify-center space-y-6 lg:order-first">
 				<div class="space-y-3">
 					<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
 						<span class="text-primary">Amzu Alex</span>
@@ -56,20 +72,6 @@
 							class="size-6 cursor-pointer text-muted-foreground transition-colors duration-200 hover:text-primary"
 						/>
 					</a>
-				</div>
-			</div>
-			<div class="flex items-center justify-center">
-				<div
-					class="relative h-[350px] w-full max-w-[350px] overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-1 shadow-xl transition-all hover:shadow-2xl"
-				>
-					<img
-						src="/main-photo.jpg"
-						alt="Amzu Alex - Software Engineer"
-						width={350}
-						height={350}
-						loading="lazy"
-						class="-translate-y-10 scale-105 rounded-full object-cover transition-transform duration-300 hover:scale-110"
-					/>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Lightbulb, Shield, Users } from 'lucide-svelte';
+	import { Separator } from '$lib/components/ui/separator';
 </script>
 
 <section class="bg-muted/40 py-24" id="about">
@@ -34,8 +35,9 @@
 				</p>
 			</div>
 
-			<div class="space-y-6">
+			<div class="flex flex-col items-center justify-center space-y-4 md:block md:space-y-6">
 				<h3 class="text-xl font-semibold">My Approach</h3>
+				<Separator class="md:hidden" />
 				<div class="space-y-4">
 					<div class="flex items-center gap-3">
 						<div class="rounded-full bg-primary/10 p-2 text-primary">
