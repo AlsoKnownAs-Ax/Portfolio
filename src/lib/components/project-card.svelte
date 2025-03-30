@@ -2,8 +2,6 @@
 	import type { Project } from '$lib/types/projects';
 	import { ExternalLink, Code, Github } from 'lucide-svelte';
 
-	let isHovered = $state(false);
-
 	interface Props {
 		project: Project;
 	}
