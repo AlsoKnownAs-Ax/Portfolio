@@ -1,6 +1,16 @@
 <script lang="ts">
 	import ProjectCard from '$lib/components/project-card.svelte';
-	import { projects } from '$lib/data/projects';
+	import { projects as porjectsData } from '$lib/data/projects';
+	import { isMobile } from '$lib/hooks/isMobile';
+	import { Button } from '$lib/components/ui/button';
+
+	let viewAll = $state<boolean>(false);
+
+	const setViewAll = (state: boolean) => {
+		viewAll = state;
+	};
+
+	const projects = $derived(!viewAll && $isMobile ? porjectsData.slice(0, 3) : porjectsData);
 </script>
 
 <section id="projects" class="bg-muted/40 py-24">
@@ -16,6 +26,16 @@
 			{#each projects as project}
 				<ProjectCard {project} />
 			{/each}
+
+			{#if $isMobile}
+				<Button variant="outline" onclick={() => setViewAll(!viewAll)}>
+					{#if !viewAll}
+						View all
+					{:else}
+						View Less
+					{/if}
+				</Button>
+			{/if}
 		</div>
 	</div>
 </section>
