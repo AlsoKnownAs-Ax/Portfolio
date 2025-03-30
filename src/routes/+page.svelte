@@ -5,7 +5,9 @@
 		Projects,
 		Testimonials,
 		Skills,
-		Experience
+		Experience,
+		Contact,
+		Footer
 	} from '$lib/components/root-sections';
 </script>
 
@@ -16,4 +18,6 @@
 	<Projects />
 	<Skills />
 	<Experience />
+	<Contact />
+	<Footer />
 </main>

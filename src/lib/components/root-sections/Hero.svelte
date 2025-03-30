@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowRight, Linkedin, Github } from 'lucide-svelte';
 	import { Button } from '../ui/button';
+	import { Config } from '$lib/config';
 </script>
 
 <section class="relative overflow-hidden bg-background py-20 md:py-32" id="hero">
@@ -36,7 +37,7 @@
 				</div>
 				<div class="flex gap-5 pt-4">
 					<a
-						href="https://github.com/AlsoKnownAs-Ax"
+						href={Config.GITHUB}
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Visit my GitHub profile"
@@ -46,7 +47,7 @@
 						/>
 					</a>
 					<a
-						href="https://www.linkedin.com/in/andrei-alexandru-amzu-5123132a0/"
+						href={Config.LINKEDIN}
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Visit my LinkedIn profile"
