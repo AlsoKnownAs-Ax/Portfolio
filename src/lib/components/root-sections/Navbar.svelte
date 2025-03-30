@@ -1,7 +1,17 @@
 <script lang="ts">
-	import { X, Menu } from 'lucide-svelte';
+	import {
+		X,
+		Menu,
+		User,
+		MessageSquareQuote,
+		LayoutGrid,
+		Code2,
+		Briefcase,
+		Mail,
+		Download
+	} from 'lucide-svelte';
 	import { Button } from '../ui/button';
-	import { fade } from 'svelte/transition';
+	import * as Sheet from '$lib/components/ui/sheet/index.js';
 
 	let isScrolled = $state(false);
 	let isOpen = $state(false);
@@ -70,71 +80,114 @@
 		</div>
 	</div>
 
-	{#if isOpen}
-		<div
-			class="fixed inset-0 z-50 flex flex-col bg-background md:hidden"
-			transition:fade={{ duration: 200 }}
-		>
-			<!-- Header space to match the normal header height -->
-			<div class="h-16"></div>
+	<Sheet.Root bind:open={isOpen}>
+		<Sheet.Content side="right" class="w-full max-w-md sm:max-w-sm">
+			<Sheet.Header class="px-1 pb-2 pt-6">
+				<Sheet.Title class="text-xl font-bold">Navigation</Sheet.Title>
+				<Sheet.Description class="text-sm text-muted-foreground">
+					Jump directly to any section of the portfolio
+				</Sheet.Description>
+			</Sheet.Header>
 
-			<!-- Content area -->
-			<div class="flex flex-1 flex-col items-center justify-center px-4 py-8">
-				<nav class="flex h-full w-full flex-col items-center justify-center space-y-8 text-center">
+			<div class="py-6">
+				<nav class="flex flex-col space-y-5">
 					<a
 						href="#about"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						About
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
+						>
+							<User size={20} />
+						</div>
+						<span class="group-hover:text-primary">About</span>
 					</a>
+
 					<a
 						href="#testimonials"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						Testimonials
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
+						>
+							<MessageSquareQuote size={20} />
+						</div>
+						<span class="group-hover:text-primary">Testimonials</span>
 					</a>
+
 					<a
 						href="#projects"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						Projects
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
+						>
+							<LayoutGrid size={20} />
+						</div>
+						<span class="group-hover:text-primary">Projects</span>
 					</a>
+
 					<a
 						href="#skills"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						Skills
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
+						>
+							<Code2 size={20} />
+						</div>
+						<span class="group-hover:text-primary">Skills</span>
 					</a>
+
 					<a
 						href="#experience"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						Experience
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
+						>
+							<Briefcase size={20} />
+						</div>
+						<span class="group-hover:text-primary">Experience</span>
 					</a>
+
 					<a
 						href="#contact"
-						class="text-2xl font-medium transition-colors hover:text-primary"
-						onclick={() => setIsOpen(false)}
+						class="group flex items-center gap-3 rounded-lg px-3 py-3.5 text-base font-medium transition-colors hover:bg-muted"
+						onclick={() => (isOpen = false)}
 					>
-						Contact
-					</a>
-					<div class="mt-4 w-full max-w-[200px]">
-						<Button
-							size="lg"
-							class="w-full justify-center"
-							href="/resume.pdf"
-							download="Amzu_Alex_Resume.pdf"
+						<div
+							class="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary"
 						>
-							Download CV
-						</Button>
-					</div>
+							<Mail size={20} />
+						</div>
+						<span class="group-hover:text-primary">Contact</span>
+					</a>
 				</nav>
 			</div>
-		</div>
-	{/if}
+
+			<div class="mt-2 px-6">
+				<Button
+					size="lg"
+					class="w-full justify-center gap-2"
+					href="/resume.pdf"
+					download="Amzu_Alex_Resume.pdf"
+				>
+					<Download size={18} />
+					Download CV
+				</Button>
+			</div>
+
+			<Sheet.Footer
+				class="flex w-full justify-center pb-8 pt-6 text-center text-xs text-muted-foreground"
+			>
+				© {new Date().getFullYear()} Amzu Alex
+			</Sheet.Footer>
+		</Sheet.Content>
+	</Sheet.Root>
 </header>
