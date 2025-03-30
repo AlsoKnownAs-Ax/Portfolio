@@ -34,11 +34,12 @@
 			<a href="#projects" class="text-sm font-medium transition-colors hover:text-primary">
 				Projects
 			</a>
-			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">Skills</a>
-			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">
+			<a href="#skills" class="text-sm font-medium transition-colors hover:text-primary">Skills</a>
+			<a href="#experience" class="text-sm font-medium transition-colors hover:text-primary">
 				Experience
 			</a>
-			<a href="#test" class="text-sm font-medium transition-colors hover:text-primary">Contact</a>
+			<a href="#contact" class="text-sm font-medium transition-colors hover:text-primary">Contact</a
+			>
 		</nav>
 		<div class="hidden items-center gap-4 md:flex">
 			<Button

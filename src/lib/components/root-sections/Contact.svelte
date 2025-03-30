@@ -80,3 +80,41 @@
 		</div>
 	</div>
 </section>
+
+<style lang="postcss">
+	:global(::-webkit-scrollbar) {
+		width: 10px;
+	}
+
+	:global(::-webkit-scrollbar-track) {
+		background: hsl(var(--background));
+		border-left: 1px solid hsl(var(--border));
+	}
+
+	:global(::-webkit-scrollbar-thumb) {
+		background: hsl(var(--muted-foreground) / 0.3);
+		border-radius: 100px;
+		border: 2px solid hsl(var(--background));
+		transition: background 0.2s ease;
+	}
+
+	:global(::-webkit-scrollbar-thumb:hover) {
+		background: hsl(var(--primary) / 0.5);
+	}
+
+	/* Firefox scrollbar */
+	:global(*) {
+		scrollbar-width: thin;
+		scrollbar-color: hsl(var(--muted-foreground) / 0.3) hsl(var(--background));
+	}
+
+	/* Smooth scrolling */
+	:global(html) {
+		scroll-behavior: smooth;
+	}
+
+	/* Anchor positioning */
+	:global(section[id]) {
+		scroll-margin-top: 80px;
+	}
+</style>

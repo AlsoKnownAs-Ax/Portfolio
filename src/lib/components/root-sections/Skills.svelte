@@ -14,7 +14,7 @@
 	);
 </script>
 
-<section id="skills" class="py-20">
+<section id="skills" class="py-24">
 	<div class="container px-4 md:px-6">
 		<div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
 			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Skills</h2>
