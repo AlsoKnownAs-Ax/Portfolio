@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { X, Menu } from 'lucide-svelte';
 	import { Button } from '../ui/button';
+	import { fade } from 'svelte/transition';
 
 	let isScrolled = $state(false);
 	let isOpen = $state(false);
@@ -20,10 +21,12 @@
 </script>
 
 <header
-	class={`sticky top-0 z-50 flex w-full justify-center transition-all duration-200 ${isScrolled ? 'bg-background/80 shadow-sm backdrop-blur-md' : 'bg-background'}`}
+	class={`sticky top-0 z-50 flex w-full justify-center transition-all duration-200 ${
+		isScrolled && !isOpen ? 'bg-background/80 shadow-sm backdrop-blur-md' : 'bg-background'
+	}`}
 >
 	<div class="container flex h-16 items-center justify-between px-4 md:px-6">
-		<a href="/" class="flex items-center gap-2">
+		<a href="/" class="z-[60] flex items-center gap-2">
 			<span class="text-xl font-bold">Amzu Alex</span>
 		</a>
 		<nav class="hidden gap-6 md:flex">
@@ -56,56 +59,81 @@
 				size="icon"
 				onclick={() => setIsOpen(!isOpen)}
 				aria-label="Toggle Menu"
+				class="z-[60]"
 			>
 				{#if isOpen}
-					<X class="size-6" />
+					<X class="z-50 size-6" />
 				{:else}
 					<Menu class="size-6" />
 				{/if}
 			</Button>
 		</div>
 	</div>
+
 	{#if isOpen}
-		<div class="container md:hidden">
-			<div class="flex flex-col space-y-4 pb-6 pt-2">
-				<a
-					href="#test"
-					class="text-sm font-medium transition-colors hover:text-primary"
-					onclick={() => setIsOpen(false)}
-				>
-					About
-				</a>
-				<a
-					href="#test"
-					class="text-sm font-medium transition-colors hover:text-primary"
-					onclick={() => setIsOpen(false)}
-				>
-					Projects
-				</a>
-				<a
-					href="#test"
-					class="text-sm font-medium transition-colors hover:text-primary"
-					onclick={() => setIsOpen(false)}
-				>
-					Skills
-				</a>
-				<a
-					href="#test"
-					class="text-sm font-medium transition-colors hover:text-primary"
-					onclick={() => setIsOpen(false)}
-				>
-					Experience
-				</a>
-				<a
-					href="#test"
-					class="text-sm font-medium transition-colors hover:text-primary"
-					onclick={() => setIsOpen(false)}
-				>
-					Contact
-				</a>
-				<div class="pt-2">
-					<Button size="sm" class="w-full justify-center">Download CV</Button>
-				</div>
+		<div
+			class="fixed inset-0 z-50 flex flex-col bg-background md:hidden"
+			transition:fade={{ duration: 200 }}
+		>
+			<!-- Header space to match the normal header height -->
+			<div class="h-16"></div>
+
+			<!-- Content area -->
+			<div class="flex flex-1 flex-col items-center justify-center px-4 py-8">
+				<nav class="flex h-full w-full flex-col items-center justify-center space-y-8 text-center">
+					<a
+						href="#about"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						About
+					</a>
+					<a
+						href="#testimonials"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						Testimonials
+					</a>
+					<a
+						href="#projects"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						Projects
+					</a>
+					<a
+						href="#skills"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						Skills
+					</a>
+					<a
+						href="#experience"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						Experience
+					</a>
+					<a
+						href="#contact"
+						class="text-2xl font-medium transition-colors hover:text-primary"
+						onclick={() => setIsOpen(false)}
+					>
+						Contact
+					</a>
+					<div class="mt-4 w-full max-w-[200px]">
+						<Button
+							size="lg"
+							class="w-full justify-center"
+							href="/resume.pdf"
+							download="Amzu_Alex_Resume.pdf"
+						>
+							Download CV
+						</Button>
+					</div>
+				</nav>
 			</div>
 		</div>
 	{/if}
