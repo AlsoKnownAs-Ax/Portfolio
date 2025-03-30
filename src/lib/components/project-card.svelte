@@ -12,7 +12,6 @@
 <div
 	class="group relative flex h-full min-h-96 flex-col overflow-hidden rounded-xl border bg-background shadow-sm transition-all duration-300 hover:translate-y-[-4px] hover:shadow-md"
 >
-	<!-- Card Header with Icon & Category -->
 	<div class="flex items-center justify-between border-b px-5 py-4">
 		<div class="rounded-full bg-primary/10 p-2.5 text-primary">
 			<Code size={20} />
@@ -22,14 +21,12 @@
 		</span>
 	</div>
 
-	<!-- Card Content -->
 	<div class="flex grow flex-col px-5 pb-6 pt-5">
 		<h3 class="mb-3 text-xl font-bold tracking-tight">{project.title}</h3>
 		<p class="mb-5 line-clamp-3 grow text-sm leading-relaxed text-muted-foreground">
 			{project.description}
 		</p>
 
-		<!-- Technologies -->
 		<div class="mb-5 flex flex-wrap gap-2">
 			{#each project.technologies.slice(0, 4) as tech}
 				<span
@@ -47,7 +44,6 @@
 			{/if}
 		</div>
 
-		<!-- Action Links -->
 		<div class="mt-auto flex items-center gap-4 border-t pt-4">
 			{#if project.url}
 				<a

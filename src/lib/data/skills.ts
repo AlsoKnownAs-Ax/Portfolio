@@ -40,6 +40,11 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-green-400'
 	},
 	{
+		name: 'NextJS',
+		icon: '/icons/nextjs.png',
+		color: 'bg-slate-800 text-blue-100'
+	},
+	{
 		name: 'Jquery',
 		icon: '/icons/jquery.png',
 		color: 'bg-slate-800 text-blue-400'
