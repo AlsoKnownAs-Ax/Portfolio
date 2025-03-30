@@ -5,5 +5,6 @@ import Testimonials from './Testimonials.svelte';
 import Projects from './Projects.svelte';
 import Skills from './Skills.svelte';
 import Experience from './Experience.svelte';
+import Contact from './Contact.svelte';
 
-export { About, Hero, Navbar, Testimonials, Projects, Skills, Experience };
+export { About, Hero, Navbar, Testimonials, Projects, Skills, Experience, Contact };
