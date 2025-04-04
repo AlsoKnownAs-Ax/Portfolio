@@ -50,7 +50,7 @@
 						</a>
 
 						<a
-							href={Config.GITHUB}
+							href={Config.LINKEDIN}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-all hover:bg-muted"

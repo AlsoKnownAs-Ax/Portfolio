@@ -171,18 +171,6 @@
 				</nav>
 			</div>
 
-			<div class="mt-2 px-6">
-				<Button
-					size="lg"
-					class="w-full justify-center gap-2"
-					href="/resume.pdf"
-					download="Amzu_Alex_Resume.pdf"
-				>
-					<Download size={18} />
-					Download CV
-				</Button>
-			</div>
-
 			<Sheet.Footer
 				class="flex w-full justify-center pb-8 pt-6 text-center text-xs text-muted-foreground"
 			>
