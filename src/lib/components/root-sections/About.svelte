@@ -30,7 +30,7 @@
 					analytics, and access control systems to enhance efficiency and usability.
 				</p>
 				<p class="leading-relaxed text-foreground">
-					I`m passionate about creating efficient, secure, and user-focused web solutions that
+					I'm passionate about creating efficient, secure, and user-focused web solutions that
 					simplify and enhance experiences. I'm always eager to learn, collaborate, and innovate.
 				</p>
 			</div>
