@@ -24,7 +24,7 @@
 			class="relative mb-4 h-20 w-20 overflow-hidden rounded-full shadow-lg ring-4 ring-primary/20"
 		>
 			<img
-				src={testimonial.avatar || '/testimonials/placeholder.png'}
+				src={`/testimonials/${testimonial.avatar || "placeholder.png"}`}
 				alt={testimonial.name}
 				class="object-cover"
 			/>
