@@ -83,6 +83,11 @@ export const Skills: Skill[] = [
 		icon: '/icons/fastapi.png',
 		color: 'bg-slate-800 text-teal-400'
 	},
+	{
+		name: 'Spring Boot',
+		icon: '/icons/spring-boot.svg',
+		color: 'bg-slate-800 text-green-400'
+	},
 
 	// Database Technologies
 	{

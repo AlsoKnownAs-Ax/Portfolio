@@ -32,7 +32,7 @@
 		<Carousel.Root
 			class="mt-10"
 			plugins={[plugin]}
-			setApi={(emblaApi) => (api = emblaApi)}
+			setApi={(emblaApi: EmblaCarouselType) => (api = emblaApi)}
 			opts={{
 				align: 'center',
 				loop: true

@@ -11,8 +11,26 @@ export const projects: Project[] = [
 		category: 'Web Development'
 	},
 	{
+		title: 'SnoopieChat',
+		description:
+			"SnoopieChat is a privacy-first messaging app that protects user data and metadata using advanced anonymization in a real-time chat environment",
+		technologies: [
+			'Spring Boot', 
+			'TypeScript', 
+			'Svelte', 
+			"OpenAPI",
+			"Tailwind", 
+			"Zod",
+			"SocketJS",
+			"Javalin"
+		],
+		url: "https://drive.google.com/file/d/10bRtmmUT3avDvwhWTvyCOrg86k6_Rcyt/view",
+		github: 'https://github.com/AlsoKnownAs-Ax/SnoopieChat',
+		category: 'Web Development'
+	},
+	{
 		title: 'Chat Application',
-		description: 'A scalable real time chat application.',
+		description: 'A real-time chat app built with modern tools like Next.js, Socket.IO, and Redis. Designed for scalability and low-latency communication.',
 		technologies: ['TypeScript', 'Next.js', 'Redis', 'Express', 'socket.io', 'upstash'],
 		github: 'https://github.com/AlsoKnownAs-Ax/Next-Project',
 		category: 'Web Development'
@@ -51,13 +69,13 @@ export const projects: Project[] = [
 		github: 'https://github.com/AlsoKnownAs-Ax/Ax_slots',
 		category: 'Web Development'
 	},
-	{
-		title: 'Fivem Garages System',
-		description:
-			' vRP garage system for FiveM where players park and retrieve vehicles from the same garage',
-		technologies: ['Lua', 'SCSS', 'Vue', 'JavaScript'],
-		url: 'https://www.youtube.com/watch?v=BHs-sTnQNGw',
-		github: 'https://github.com/AlsoKnownAs-Ax/ax_garages-FiveM',
-		category: 'FiveM Development'
-	}
+	// {
+	// 	title: 'Fivem Garages System',
+	// 	description:
+	// 		' vRP garage system for FiveM where players park and retrieve vehicles from the same garage',
+	// 	technologies: ['Lua', 'SCSS', 'Vue', 'JavaScript'],
+	// 	url: 'https://www.youtube.com/watch?v=BHs-sTnQNGw',
+	// 	github: 'https://github.com/AlsoKnownAs-Ax/ax_garages-FiveM',
+	// 	category: 'FiveM Development'
+	// }
 ];
