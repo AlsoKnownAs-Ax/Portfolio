@@ -12,8 +12,11 @@
 			</p>
 		</div>
 		<div class="mx-auto grid max-w-4xl gap-6 py-12 md:grid-cols-2">
-			{#each experiences as experience}
-				<ExperienceCard {experience} />
+			{#each experiences as experience, index}
+				<ExperienceCard
+				 {experience}
+				 class={experiences.length % 2 === 1 && index === experiences.length - 1 ? 'md:col-span-2 md:justify-self-center md:max-w-md' : ''} 
+				/>
 			{/each}
 		</div>
 	</div>
