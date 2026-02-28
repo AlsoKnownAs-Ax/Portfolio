@@ -113,11 +113,6 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-orange-500'
 	},
 	{
-		name: 'NPM',
-		icon: '/icons/npm.png',
-		color: 'bg-slate-800 text-red-500'
-	},
-	{
 		name: 'Maven',
 		icon: '/icons/maven.png',
 		color: 'bg-slate-800 text-orange-400'
@@ -126,6 +121,11 @@ export const Skills: Skill[] = [
 		name: 'UV Python',
 		icon: '/icons/uv.svg',
 		color: 'bg-slate-800 text-indigo-400'
+	},
+	{
+		name: 'Turborepo',
+		icon: '/icons/turborepo.png',
+		color: 'bg-slate-800 text-white'
 	},
 
 	// Type Validation & API Libraries
@@ -150,5 +150,18 @@ export const Skills: Skill[] = [
 		name: 'Stripe',
 		icon: '/icons/stripe.webp',
 		color: 'bg-slate-800 text-purple-300'
-	}
+	},
+	// Observability Tools
+	{
+		name: 'Datadog',
+		icon: '/icons/datadog.svg',
+		color: 'bg-slate-800 text-violet-300'
+	},
+	// Testing
+	{
+		name: 'Playwright',
+		icon: '/icons/playwright.svg',
+		color: 'bg-slate-800 text-green-400'
+	},
+
 ];

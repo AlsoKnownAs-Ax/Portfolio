@@ -51,10 +51,10 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
-					aria-label="View project: {project.title}"
+					aria-label="Preview: {project.title}"
 				>
 					<ExternalLink size={16} />
-					View Project
+					Preview
 				</a>
 			{/if}
 			{#if project.github}
@@ -66,7 +66,7 @@
 					aria-label="View source code for: {project.title}"
 				>
 					<Github size={16} />
-					Source Code
+					Source code
 				</a>
 			{/if}
 		</div>

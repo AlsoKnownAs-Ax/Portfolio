@@ -4,9 +4,9 @@ export const experiences: Experience[] = [
 	{
 		company: 'Qogita',
 		role: 'Software Engineer Intern',
-		period: 'Jul 2025 - Present',
+		period: 'Jul 2025 - Feb 2026',
 		description:
-			'Contributing to a wholesale marketplace platform connecting suppliers and buyers. Improved scalability by migrating to Next.js App Router and enhanced deployment safety with feature flags and advanced Git workflows.'
+			"Contributing to Qogita's wholesale marketplace by building seller-portal fulfillment features to streamline logistics, supporting the migration from Next.js Pages Router to App Router, and implementing plug-and-play automatic SDK generation with hey-api to reduce client maintenance while preserving observability request properties and authentication behavior."
 	},
 	{
 		company: 'AQI Travel',

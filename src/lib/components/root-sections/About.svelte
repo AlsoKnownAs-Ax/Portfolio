@@ -6,10 +6,9 @@
 <section class="bg-muted/40 py-24" id="about">
 	<div class="container px-4 md:px-6">
 		<div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-			<!-- <span class="text-primary text-sm font-medium uppercase tracking-widest">Get to know me</span> -->
 			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
 			<p class="max-w-[85%] text-lg text-muted-foreground md:text-xl">
-				I'm a software developer with 3+ years of experience building web applications and services.
+				I'm a software developer with 4+ years of experience building web applications and services.
 			</p>
 		</div>
 
@@ -25,7 +24,7 @@
 				<p class="leading-relaxed text-foreground">
 					Driven by this newfound passion, I expanded into web development, mastering frameworks
 					like Svelte, TypeScript, React.js, and Vue.js. Today, I specialize in full-stack
-					development, primarily using Svelte, TypeScript, and Python. Professionally, I've worked
+					development, primarily using Next.js, and FastAPI. Professionally, I've worked
 					on building scalable web applications with secure authentication, user management, data
 					analytics, and access control systems to enhance efficiency and usability.
 				</p>
