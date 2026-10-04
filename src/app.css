@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Shared evidence-board materials; individual layouts use Tailwind utilities. */
+@layer components {
+	.board-pin {
+		@apply relative rotate-[var(--tilt,0deg)] shadow-board-sheet;
+		@apply before:absolute before:-top-[5px] before:left-1/2 before:z-[3] before:-ml-2 before:size-4 before:rounded-full before:bg-board-pin before:shadow-board-pin before:content-[''];
+	}
+	.board-paper {
+		@apply bg-board-paper bg-paper-texture;
+	}
+	.board-heading {
+		@apply font-stencil font-black uppercase leading-[0.9] tracking-[0.005em];
+	}
+	.board-link {
+		@apply inline-flex items-center gap-1 font-bold text-board-ink hover:text-board-red;
+	}
+	.evidence-board :where(a, button):focus-visible {
+		@apply outline outline-dashed outline-[3px] outline-offset-[3px] outline-board-red;
+	}
+	.evidence-board a {
+		@apply decoration-[1.5px] underline-offset-4;
+	}
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
