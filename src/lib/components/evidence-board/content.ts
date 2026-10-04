@@ -9,7 +9,7 @@ export const person = {
 	title: 'Software Engineer',
 	now: 'Platform team, Qogita',
 	intro:
-		"I started shipping software in high school, writing Lua systems for FiveM game servers. Today I build developer tools and shared infrastructure on Qogita's Platform team. Working across the stack from FastAPI and Spring Boot to Svelte and Next.js in my free time.",
+		'I started building software in high school, writing Lua systems for FiveM game servers. Today, I build developer tools and shared infrastructure on Qogita’s Platform team. Outside work, I explore new ideas through full-stack projects.',
 	portrait: '/main-photo.jpg'
 };
 
