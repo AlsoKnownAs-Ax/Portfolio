@@ -5,7 +5,7 @@ export const projects: Project[] = [
 		title: 'StreamTube',
 		description:
 			'A modern streaming platform showcasing movies from the IMDb API with descriptions, reviews, and trailers for an engaging viewing experience.',
-		technologies: ['TypeScript', 'NextJS', 'JavaScript', 'Tailwind', 'IMBb API'],
+		technologies: ['TypeScript', 'Next.js', 'JavaScript', 'Tailwind', 'IMDb API'],
 		url: 'https://stream-tube-gamma.vercel.app/',
 		github: 'https://github.com/AlsoKnownAs-Ax/StreamTube',
 		category: 'Web Development'
@@ -13,7 +13,7 @@ export const projects: Project[] = [
 	{
 		title: 'SnoopieChat',
 		description:
-			"SnoopieChat is a privacy-first messaging app that protects user data and metadata using advanced anonymization in a real-time chat environment",
+			"SnoopieChat is a privacy-first messaging app that protects user data and metadata using advanced anonymization in a real-time chat environment.",
 		technologies: [
 			'Spring Boot', 
 			'TypeScript', 
@@ -38,15 +38,15 @@ export const projects: Project[] = [
 	{
 		title: 'Bug Bounty Bank',
 		description:
-			'Bug-Bounty-Bank An intentionally vulnerable banking website for security practitioners to find and exploit web application vulnerabilities.',
+			'An intentionally vulnerable banking website for security practitioners to find and exploit web application vulnerabilities.',
 		technologies: [
 			'FastAPI',
 			'Svelte',
 			'Python',
-			'hey-API',
+			'Hey API',
 			'Zod',
 			'SQLite',
-			'SQL Model',
+			'SQLModel',
 			'UV Python',
 			'Pydantic'
 		],
@@ -63,8 +63,8 @@ export const projects: Project[] = [
 	},
 	{
 		title: 'Slots Machine App',
-		description: 'A simple and fun slot machine game',
-		technologies: ['Vue', 'SCSS', 'JQuery', 'JavaScript'],
+		description: 'A simple and fun slot machine game.',
+		technologies: ['Vue', 'SCSS', 'jQuery', 'JavaScript'],
 		url: 'https://github.com/AlsoKnownAs-Ax/Ax_slots/blob/main/html/assets/preview.png',
 		github: 'https://github.com/AlsoKnownAs-Ax/Ax_slots',
 		category: 'Web Development'
