@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Download, Github, Linkedin, Mail } from 'lucide-svelte';
+	import { Github, Linkedin, Mail } from 'lucide-svelte';
 	import { person, links } from './content';
 	const channels = [
 		{ label: 'Email', text: links.email, href: links.mailto, icon: Mail },
@@ -10,13 +10,6 @@
 			href: links.linkedin,
 			icon: Linkedin,
 			target: '_blank'
-		},
-		{
-			label: 'Resume',
-			text: person.resumeName,
-			href: person.resume,
-			icon: Download,
-			download: person.resumeName
 		}
 	];
 </script>
@@ -42,7 +35,6 @@
 						class="board-link gap-2.5 break-all"
 						href={channel.href}
 						target={channel.target}
-						download={channel.download}
 						rel="noopener noreferrer"><channel.icon size={17} aria-hidden="true" />{channel.text}</a
 					>
 				</li>

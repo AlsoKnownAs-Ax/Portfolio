@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Download, Mail } from 'lucide-svelte';
+	import { Mail } from 'lucide-svelte';
 	import { person, links } from './content';
 </script>
 
@@ -41,11 +41,6 @@
 		<a
 			class="inline-flex items-center gap-2 border-[3px] border-double border-board-red px-[14px] py-2.5 text-sm font-bold uppercase leading-normal tracking-[0.08em] text-board-red no-underline transition-colors hover:bg-board-red hover:text-white"
 			href={links.mailto}><Mail size={17} aria-hidden="true" /> Request contact</a
-		>
-		<a
-			class="inline-flex items-center gap-2 border-2 border-board-ink px-[14px] py-2.5 text-sm font-bold uppercase leading-normal tracking-[0.08em] text-board-ink no-underline transition-colors hover:bg-board-ink hover:text-board-paper"
-			href={person.resume}
-			download={person.resumeName}><Download size={17} aria-hidden="true" /> Resume (PDF)</a
 		>
 	</div>
 </div>

@@ -15,10 +15,8 @@ test('the evidence board is the default site, with no prototype selector', async
 	await expect(page.getByRole('img', { name: 'Portrait of Alex Amzu' })).toBeVisible();
 	await expect(page.getByRole('main')).toHaveCount(1);
 	await expect(page.getByRole('button', { name: 'Next variant' })).toHaveCount(0);
-	await expect(page.getByRole('link', { name: 'Resume (PDF)', exact: true })).toHaveAttribute(
-		'href',
-		'/resume.pdf'
-	);
+	await expect(page.getByRole('link', { name: /resume/i })).toHaveCount(0);
+	await expect(page.locator('a[download]')).toHaveCount(0);
 	await page.evaluate(() => document.fonts.ready);
 	await expect
 		.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth))
@@ -33,6 +31,11 @@ test('the evidence board is the default site, with no prototype selector', async
 	await page.goto('/?variant=A');
 	await expect(page.getByRole('heading', { name: 'Known postings' })).toBeVisible();
 	await expect(page.getByRole('button', { name: 'Next variant' })).toHaveCount(0);
+});
+
+test('the resume file is not publicly downloadable', async ({ request }) => {
+	const response = await request.get('/resume.pdf');
+	expect(response.status()).toBe(404);
 });
 
 test('sticky navigation follows the section in view', async ({ page }) => {
