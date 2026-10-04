@@ -23,6 +23,11 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-white'
 	},
 	{
+		name: 'C#',
+		icon: '/icons/csharp.webp',
+		color: 'bg-slate-800 text-purple-400'
+	},
+	{
 		name: 'Lua',
 		icon: '/icons/lua.png',
 		color: 'bg-slate-800 text-blue-400'
@@ -40,14 +45,24 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-green-400'
 	},
 	{
-		name: 'NextJS',
+		name: 'Next.js',
 		icon: '/icons/nextjs.png',
 		color: 'bg-slate-800 text-blue-100'
 	},
 	{
-		name: 'Jquery',
+		name: 'jQuery',
 		icon: '/icons/jquery.png',
 		color: 'bg-slate-800 text-blue-400'
+	},
+	{
+		name: 'Blazor',
+		icon: '/icons/blazor.svg',
+		color: 'bg-slate-800 text-purple-300'
+	},
+	{
+		name: 'Redux',
+		icon: '/icons/redux.svg',
+		color: 'bg-slate-800 text-violet-400'
 	},
 
 	// Web Technologies
@@ -101,7 +116,7 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-blue-300'
 	},
 	{
-		name: 'SQL Model',
+		name: 'SQLModel',
 		icon: '/icons/sqlmodel.png',
 		color: 'bg-slate-800 text-cyan-300'
 	},
@@ -140,7 +155,7 @@ export const Skills: Skill[] = [
 		color: 'bg-slate-800 text-yellow-400'
 	},
 	{
-		name: 'Hey-API',
+		name: 'Hey API',
 		icon: '/icons/hey-api.png',
 		color: 'bg-slate-800 text-purple-400'
 	},

@@ -1,23 +1,13 @@
 <script lang="ts">
-	import {
-		About,
-		Hero,
-		Projects,
-		Testimonials,
-		Skills,
-		Experience,
-		Contact,
-		Footer
-	} from '$lib/components/root-sections';
+	import EvidenceBoard from '$lib/components/evidence-board/EvidenceBoard.svelte';
 </script>
 
-<main class="flex-1">
-	<Hero />
-	<About />
-	<Testimonials />
-	<Projects />
-	<Skills />
-	<Experience />
-	<Contact />
-	<Footer />
-</main>
+<svelte:head>
+	<title>Alex Amzu · Software Engineer</title>
+	<meta
+		name="description"
+		content="Alex Amzu is a software engineer building developer tools and shared infrastructure on Qogita's Platform team, working across the stack from FastAPI and Spring Boot to Svelte and Next.js."
+	/>
+</svelte:head>
+
+<EvidenceBoard />

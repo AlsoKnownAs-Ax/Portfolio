@@ -3,6 +3,19 @@ import type { Experience } from '$lib/types/experience';
 export const experiences: Experience[] = [
 	{
 		company: 'Qogita',
+		role: 'Junior Software Engineer',
+		period: 'Sep 2026 - Present',
+		description:
+			"Contributing to Qogita's Platform team, building and maintaining developer-facing tools that improve engineering productivity across the organization, streamlining internal workflows, and strengthening the shared infrastructure product teams rely on to ship faster and more reliably."
+	},
+	{
+		company: 'NATO',
+		role: 'Full Stack Engineer Intern',
+		period: 'Mar 2026 - Aug 2026',
+		description: 'CLASSIFIED'
+	},
+	{
+		company: 'Qogita',
 		role: 'Software Engineer Intern',
 		period: 'Jul 2025 - Feb 2026',
 		description:
